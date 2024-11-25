@@ -19,7 +19,17 @@
   <style>
     .navbar-toggler {
       border: none;
-    }
+      outline: none;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+
+  .navbar-toggler:focus, 
+  .navbar-toggler:hover {
+    box-shadow: none; 
+    outline: none; 
+  }
     .navbar .nav_bar .navbar-nav .nav-link {
         font-family: 'Hind Siliguri';
         font-size: 16px;
@@ -75,6 +85,7 @@
         font-weight: 500;
         line-height: 24px;
         color: #051E38;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,8 +93,9 @@
     }
     .navbar .responsive_menu i{
         color: #EA1827;
-        font-size: 30px;
+        font-size: 25px;
     }
+    
     @media(max-width: 425px){
       .navbar .navbar-brand{
         width: 50%;
